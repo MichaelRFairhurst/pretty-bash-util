@@ -56,7 +56,7 @@ ESC='\\e'
 CNUMS=( )
 for i in {0..9}
 do
-CNUMS[$i]=$(echo "${NUMS[$i]}" | sed "s/[ _]/$ESC[1C/g" | tr '\n' "+" | sed "s/\+/$ESC[1B$ESC[6D/g" | sed "s/#/$ESC[31m0$ESC[0m/g")
+CNUMS[$i]=$(echo "${NUMS[$i]}" | sed "s/[ _]/$ESC[1C/g" | tr '\n' "+" | sed "s/\+/$ESC[1B$ESC[6D/g" | sed "s/#/$ESC[30;41m0$ESC[0m/g")
 done
 
 echo > squareclock_nums.h

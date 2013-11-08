@@ -10,7 +10,7 @@
 #define false 0
 #define ANSINL "\033[5A\033[7C"
 
-char nums[10][280] = { NUMS0, NUMS1, NUMS2, NUMS3, NUMS4, NUMS5, NUMS6, NUMS7, NUMS8, NUMS9 };
+char* nums[10] = { NUMS0, NUMS1, NUMS2, NUMS3, NUMS4, NUMS5, NUMS6, NUMS7, NUMS8, NUMS9 };
 
 void printNumber(int n) {
 	fputs(nums[n], stdout);
